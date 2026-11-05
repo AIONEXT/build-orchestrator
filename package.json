@@ -1,0 +1,21 @@
+{
+  "name": "build-orchestrator",
+  "version": "0.1.0",
+  "description": "Build-Review-Test-Fix-Rebuild-Validate-Test-Deploy pipeline orchestrator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
